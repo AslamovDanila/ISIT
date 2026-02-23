@@ -1,9 +1,12 @@
-# 🐱 Интелектуальные системы
+# 🐱 Практические работы по программированию
 
 ---
 
 <div align="center">
 
-![Крутой собак](https://tenor.com/sEzZzKEdP8r.gif)
+![Cat Giphy](https://tenor.com/uMGy7edvh29.gif)
+
+
+
 
 </div>
