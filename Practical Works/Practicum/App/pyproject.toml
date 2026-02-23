@@ -1,0 +1,14 @@
+[project]
+name = "qwwmekw"
+version = "0.1.0"
+description = "Electronic dictionary with Flet and async/await"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flet>=0.25.0",
+    "aiohttp>=3.9.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
