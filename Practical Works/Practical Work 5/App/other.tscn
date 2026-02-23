@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dbtf4l0ndbnfv"]
+
+[ext_resource type="Texture2D" uid="uid://vhlupsxdum24" path="res://country/Panel_1.png" id="1_4clav"]
+[ext_resource type="Script" uid="uid://dyladao7fri84" path="res://other.gd" id="1_iratb"]
+[ext_resource type="Texture2D" uid="uid://5cjv6or1f1g5" path="res://россия.jpg" id="3_x0mny"]
+[ext_resource type="Texture2D" uid="uid://sxc6v2tifw68" path="res://Flag.png" id="4_mchre"]
+
+[sub_resource type="SystemFont" id="SystemFont_esrft"]
+font_names = PackedStringArray("Fantasy")
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1784654043]
+script = ExtResource("1_iratb")
+
+[node name="Timer" type="Timer" parent="." unique_id=919731490]
+one_shot = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1607827782]
+
+[node name="Panel1" type="Sprite2D" parent="Node2D" unique_id=341605310]
+position = Vector2(599, 320)
+texture = ExtResource("1_4clav")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1849547237]
+unique_name_in_owner = true
+position = Vector2(593.9999, 258.99994)
+scale = Vector2(0.08707412, 0.10019667)
+texture = ExtResource("3_x0mny")
+
+[node name="russia" type="Button" parent="Node2D/Sprite2D" unique_id=210265221]
+offset_left = 738.0
+offset_top = 92.0
+offset_right = 778.0
+offset_bottom = 148.0
+scale = Vector2(1.0515476, 1.011709)
+icon = ExtResource("4_mchre")
+flat = true
+
+[node name="Label3" type="Label" parent="Node2D" unique_id=204954016]
+unique_name_in_owner = true
+offset_left = 661.0
+offset_top = 353.0
+offset_right = 791.0
+offset_bottom = 393.0
+theme_override_fonts/font = SubResource("SystemFont_esrft")
+theme_override_font_sizes/font_size = 39
+text = "130000"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Node2D" unique_id=730647696]
+unique_name_in_owner = true
+offset_left = 400.0
+offset_top = 358.0
+offset_right = 530.0
+offset_bottom = 398.0
+theme_override_fonts/font = SubResource("SystemFont_esrft")
+theme_override_font_sizes/font_size = 39
+text = "Население"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="Node2D" unique_id=673144634]
+unique_name_in_owner = true
+offset_left = 349.0
+offset_top = 205.0
+offset_right = 479.0
+offset_bottom = 245.0
+theme_override_fonts/font = SubResource("SystemFont_esrft")
+theme_override_font_sizes/font_size = 39
+text = "Валюта"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Node2D" unique_id=1987328735]
+unique_name_in_owner = true
+offset_left = 532.0
+offset_top = 161.0
+offset_right = 645.0
+offset_bottom = 201.0
+theme_override_fonts/font = SubResource("SystemFont_esrft")
+theme_override_font_sizes/font_size = 39
+text = "РОССИЯ"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Node2D" unique_id=744390358]
+modulate = Color(0.9491131, 0.59611577, 0.6124517, 1)
+offset_left = 533.0
+offset_top = 404.0
+offset_right = 642.0
+offset_bottom = 476.0
+theme_override_font_sizes/font_size = 46
+text = "БУМ"
+
+[node name="Label5" type="Label" parent="Node2D" unique_id=596193212]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = -2.676923
+anchor_top = -4.025
+anchor_right = -2.676923
+anchor_bottom = -4.025
+offset_left = 350.0
+offset_top = 249.0
+offset_right = 480.0
+offset_bottom = 305.0
+theme_override_fonts/font = SubResource("SystemFont_esrft")
+theme_override_font_sizes/font_size = 39
+text = "₽ ＄"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Node2D/Button" to="." method="_on_button_pressed"]
