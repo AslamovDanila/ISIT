@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Cat Giphy](https://user-images.githubusercontent.com/74038190/212751818-13da6fd2-27ca-45c4-9c64-3940ccfa6fd3.gif)
+![Cat Giphy](https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif)
 
 </div>
 
